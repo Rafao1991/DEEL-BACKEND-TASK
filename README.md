@@ -1,12 +1,12 @@
 # DEEL BACKEND TASK
 
-Hello guys! I did the test in a little hurry before catch a flight, so unfortunatily I did not make anything alse than the required :(
+Hello guys! I did the test in a little hurry before catching a flight, so unfortunately I did not make anything else than the required :(
 
 I'm sorry about that.
 
-I will be back on wednesday (Nov 16th), if you let me have the chance of polishing the solution a bit and add some tests on it, that would be great.
+I will be back on wednesday (Nov 16th), if you let me have the chance to polish the solution a bit and add some tests on it, that would be great.
 
-But at least the requires is done.
+But at least the required is done.
 
 ---
 
