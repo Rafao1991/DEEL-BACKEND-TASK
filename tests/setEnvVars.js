@@ -1,0 +1,1 @@
+process.env.DATABASE_FILE = './database_test.sqlite3';

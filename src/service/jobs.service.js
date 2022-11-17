@@ -58,7 +58,7 @@ const pay = async (jobId, balance, profileId) => {
     await Promise.all([
         profilesService.updateBalance(profileId, debitBalance.toFixed(2)),
         profilesService.updateBalance(contractor.id, creditBalance.toFixed(2)),
-        updatePaid(jobId, moment().valueOf(), true)
+        updatePaid(jobId, true, moment().valueOf())
     ]);
 
     return { success: true };

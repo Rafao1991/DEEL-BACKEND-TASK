@@ -1,12 +1,10 @@
 # DEEL BACKEND TASK
 
-Hello guys! I did the test in a little hurry before catch a flight, so unfortunatily I did not make anything alse than the required :(
+Hey there! Here is the task done.
 
-I'm sorry about that.
+I did some separation between the API routes and files, so we can understand the code better and have isolated responsibilities. There is a controller layer, where we have our routes defined by resource and a service layer where we have our business logic.
 
-I will be back on wednesday (Nov 16th), if you let me have the chance of polishing the solution a bit and add some tests on it, that would be great.
-
-But at least the requires is done.
+I have added tests to the service layer, the test suite uses a different database file, so we keep our main database secure. It is handled by the .env file, for the test execution the environment variable for the database name is overwritten.
 
 ---
 

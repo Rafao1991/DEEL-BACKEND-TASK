@@ -25,7 +25,7 @@ const listClients = async () => {
 
 const findClientById = async (id) => {
     const client = await Profile.findOne({
-        where: { id }
+        where: { id, type: 'client' }
     });
     return client;
 };

@@ -73,7 +73,8 @@ const findBestClients = async (start, end, limit) => {
     const sorted = Object.entries(map).sort((a, b) => b[1] - a[1]);
 
     const bestClients = [];
-    for (let i = 0; i < limit; i++) {
+    const length = limit > sorted.length ? sorted.length : limit;
+    for (let i = 0; i < length; i++) {
         const client = await profilesService.findClientById(sorted[i][0]);
         if (!client) continue;
 

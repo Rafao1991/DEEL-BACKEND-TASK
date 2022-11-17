@@ -11,9 +11,7 @@ const deposit = async (amount, balance, profileId) => {
             model: Contract,
             where: {
                 status: ['new', 'in_progress'],
-                [Op.or]: [
-                    { clientId: profileId },
-                ]
+                clientId: profileId,
             }
         }],
         where: {
@@ -24,7 +22,7 @@ const deposit = async (amount, balance, profileId) => {
         }
     });
 
-    if (!jobs) return { success: false, status: 404, message: 'Jobs not found' };
+    if (jobs?.length <= 0) return { success: false, status: 404, message: 'Jobs not found' };
 
     const total = jobs.reduce((acc, job) => acc + job.price, 0);
     const quarter = total / 4;

@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const { sequelize } = require('./model')
@@ -6,6 +8,7 @@ const contractsController = require('./controller/contracts.controller');
 const jobsController = require('./controller/jobs.controller');
 const balancesController = require('./controller/balances.controller');
 const adminController = require('./controller/admin.controller');
+
 
 const app = express();
 app.use(bodyParser.json());
